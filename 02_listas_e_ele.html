@@ -1,0 +1,63 @@
+<!-- Ponto de exclamação "!" cria o cabeçalho -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz o código poder ser aberto em qualquer dispositivo -->
+    <title>Listas em HTML</title>
+</head>
+<body>
+    <h1>Diferentes tipos de listas</h1>
+    <h2>Lista de compras (Não numerada) UL</h2>
+
+    <!-- "ul" (Unorder list) para lista não ordenada -->
+     <!-- disc (Padrão), circle, square, none (nenhum) -> para desenhinho antes dos itens -->
+    <ul style="list-style-type: square;"> 
+        <li>Arroz</li> <!-- "li" para itens da lista -->
+        <li>Feijão</li>
+        <li>Soja</li>
+        <li>Verduras</li>
+        <!-- "shift" + "alt" + seta para baixo duplica a linha -->
+    </ul>
+    <hr> <!-- "hr" faz linha horizontal -->
+
+    <h2>Lista numérica (Numerada) OL</h2>
+    <!-- "ol" (Ordered list) para lista ordenada -->
+    <!-- decimal (Padrão), lower-alpha, upper-alpha, lower-roman -->
+     <ol style="list-style-type: lower-alpha;">
+        <li>Ferver água</li>
+        <li>Colocar a pó no filtro</li>
+        <li>Despejar água quente</li>
+        <li>Aguardar coar</li>
+     </ol>
+     <hr>
+
+     <!-- "dl" para lista com definição de termos -->
+     <h2>Lista de definição (Glossário de termos) DL</h2>
+     
+     <dl>
+        <dt>HTML</dt> <!-- "dt" para o termo -->
+        <dd>Hyper Text Markup Language</dd> <!-- "dd" para a definição (fica embaixo e pouco para o lado) -->
+        
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets - Folhas de estilo</dd>
+     </dl>
+     <hr>
+
+     <!-- Lista encadeada mistura as listas; uma dentro da outra -->
+     <h2>Lista encadeada</h2>
+        <ul>
+            <li>Frutas</li>
+                <ol>
+                    <li>Maça</li>
+                    <li>Banana</li>
+                </ol>
+
+            <li>Verduras</li>
+                <ol style="list-style-type: upper-alpha;">
+                    <li>Alface</li>
+                    <li>Toamte</li>
+                </ol>
+        </ul>
+</body>
+</html>

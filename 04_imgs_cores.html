@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem e cores</title>
+</head>
+<!-- o "style" + "background-color" ao lado do Body mudam a cor de fundo da página -->
+<body style="background-color: #aeaeae;">
+
+    <h1>Trabalhando com imagens e cores</h1>
+
+    <!-- As cores podem ser colocadas através de seu nome em inglês, hexadecimal ou RGB  -->
+    <!-- "style" + "color" ao lado do p (parágrafo) mudam a cor da escrita -->
+    <p style="color: red;">Texto em vermelho</p>
+    <p style="color: #00ff00;">Texto em verde (hexadecimal)</p>  <!-- quantidade de vermelho, verde, azul -->
+    <p style="color: rgb(00, 00, 255);">Texto em azul (RGB)</p>
+    <hr>
+
+    <h2>imagens</h2>
+    <img src="assets/Senai.png" alt="Logo SENAI" width="150" height="100">  <!-- width = largura; height = altura -->
+
+    <img src="assets/Itaú.jpg" alt="Logo do Itaú" style="max-width: 10%;">  <!-- "style" + "max-width: X%" definem tamanho da imagem -->
+    <hr>
+
+    <h2>Imagem com link</h2>
+    <p>
+        <a href="https://www.google.com" target="_blank">
+            <img src="assets/google.jpg" alt="Google" width="250" height="150">
+        </a>
+    </p>
+    <hr>
+
+    <!-- Elemento com cor de fundo; "style" + "background-color" ao lado de div mudam a cor só dessa parte-->
+    <div style="background-color: yellow; height: 200px;">
+        <p>Conteúdo com fundo amarelo</p>
+    </div>
+
+</body>
+</html>
