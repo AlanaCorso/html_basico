@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+    <h1>Foemulário de cadastro</h1>
+
+    <!-- "form" para abrir fomulário -->
+    <form action="processar.php" method="post">
+
+        <!-- Campo de nome -->
+        <label for="nome">Nome completo:</label><br>  <!-- "label" para campo de texto simples (pedir o que será escrito) -->
+        <input type="text" id="nome" name="nome" placeholder="Nome completo..." required><br><br>  <!-- "inout" para entrar dados; "required" para ser obrigatório enviar -->
+
+        <!-- Campo de e-mail -->
+        <label for="e-mail">E-mail:</label><br> 
+        <input type="e-mail" id="e-mail" name="e-mail" placeholder="Digite seu e-mail..." required><br><br>  <!-- "placeholder" para texto na área a ser digitada auxiliando no que fazer -->
+
+        <!-- Campo de senha -->
+        <label for="senha">Senha:</label><br> 
+        <input type="password" id="senha" name="senha" required><br><br> 
+        
+        <!-- "radio" no input para botão de opção única -->
+         <label>Sexo:</label><br>
+         <input type="radio" name="sexo" id="masculino" value="M">
+         <label for="masculino">Masculino</label><br>
+
+         <input type="radio" name="sexo" id="feminino" value="F">
+         <label for="feminino">Feminino</label><br><br>
+
+        <!-- "checkbox" no input para caixas de seleção múltipla -->
+        <label>Interesses:</label><br>
+        <input type="checkbox" name="interesses" id="programacao" value="programacao">
+
+        <label for="programacao">Programação</label><br>
+        <input type="checkbox" name="interesses" id="design" value="design">
+        <label for="design">Design</label><br>
+
+        <input type="checkbox" name="interesses" id="esportes" value="esportes">
+        <label for="esportes">Esportes</label><br><br>
+
+        <!-- "select" para lista de seleção -->
+         <label for="cidade">Cidade:</label>
+        <select name="cidade" id="cidade">
+            <option value="">Selecione uma cidade</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Belo Horizonte</option>
+        </select><br><br>
+
+        <!-- "textarea" para área de texto -->
+        <label for="comentarios">Comentários:</label><br>
+        <textarea name="comentarios" id="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <!-- "file" no input para campo de arquivo -->
+        <label for="foto">Foto:</label><br>
+        <input type="file" name="foto" id="foto"><br><br>
+
+        <!-- "button" para botão de formulário -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+</body>
+</html>
