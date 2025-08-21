@@ -1,9 +1,50 @@
-<!-- Desafio 2 digitação (Aqui) -->
- 
-<!-- Obs: Ler (10a_desafio.md) para orientações -->
-<!-- Imagem de como deve ficar pronto na pasta assets (desafio 2.jpg) -->
-
-<!-- 📱 🚀 📺 📧 emojis para usar no projeto -->
-
-
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+</head>
+<body>
+    <h1>📱 TechNews Today</h1>
+    <main>
+       <p>As <strong>últimas novidades</strong> do mundo <em>tech</em></p>
+        <article>
+                <header>
+                    <h2>🚀 IA Revoluciona Desenvolvimento</h2>
+                    <time datetime="2025-08-21">21 de Agosto, 2025<time>
+                </header>
+        </article>
+            <p>Inteligência artificial está transformando como criamos software... </p>
+        <details>
+                <summary>Leia mais&rarr;</summary>
+                <p>Usada corretamente, a IA é uma grande arma no mundo tech</p>
+        </details>
+            <h3>📺 Tech em Vídeo</h3>
+        <iframe 
+            width="560" height="315" 
+            src="//www.youtube.com/embed/eqUFcr1mI3Y"
+            frameborder="0"
+            allow="accelerometer; autoplay"
+            allowfullscreen>
+        </iframe>
+        <br>
+    </main>
+    <h3>📧 Newsletter</h3>
+    <form action="enviar.php">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="interesse">Áreas de interesse:</label>
+            <select name="interesse" id="interesse">Área de interesse:
+                <option value="artificial">Inteligência Artificial</option> <option value="programacao">Programação</option> <option value="frontof">Design</option>
+            </select>
+        <input type="checkbox" name="termos" id="termos" value="termos">
+        <label>Aceito os termos</label>
+        <button type="submit">Inscrever-se</button>
+        <footer>
+        <p>&copy; 2025 TechNews Today &bull; Todos os direitos reservados </p>
+        <p><em>Contato: </em><a href="mailto:info@technews.com">info@technews.com</a></p>
+      </footer>
+    </form>
+</body>
+</html>
